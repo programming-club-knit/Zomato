@@ -265,7 +265,7 @@ lth.addEventListener("click", () => {
     lth.style.backgroundColor = "blue";
     lth.style.color = "white";
     res.innerHTML = "";
-    clonerestaurant.forEach((data) => {
+    clonerestaurant.filter((val)=>(val.priceForTwo < 500)).forEach((data) => {
       const restwrapper = document.createElement("div");
       restwrapper.setAttribute("data-aos", "zoom-in");
       res.appendChild(restwrapper);
@@ -293,7 +293,8 @@ lth.addEventListener("click", () => {
       restwrapper.appendChild(rest);
       Issorted = true;
     });
-  } else {
+  }
+  else {
     lth.style.backgroundColor = "white";
     res.innerHTML = "";
         lth.style.color = "black";
@@ -340,8 +341,10 @@ ufive.addEventListener("click", () => {
     res.innerHTML = "";
     ufive.style.backgroundColor = "white";
     ufive.style.color = "black";
-
-    restaurants.forEach((data) => {
+    clonerestaurant = [...restaurants].sort(
+      (a, b) => a.priceForTwo - b.priceForTwo && a.priceForTwo <500
+    );
+    underfivehund.forEach((data) => {
       const restwrapper = document.createElement("div");
       restwrapper.setAttribute("data-aos", "zoom-in");
       res.appendChild(restwrapper);
@@ -373,6 +376,7 @@ ufive.addEventListener("click", () => {
     res.innerHTML = "";
     ufive.style.backgroundColor = "blue";
     ufive.style.color = "white";
+    
 
     underfivehund.forEach((data) => {
       const restwrapper = document.createElement("div");
@@ -401,6 +405,8 @@ ufive.addEventListener("click", () => {
 
       restwrapper.appendChild(rest);
       isunder500 = true;
+
+      
     });
   }
 });
