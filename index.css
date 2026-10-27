@@ -74,16 +74,16 @@ html, body {
     margin:0px ;
     padding:0px ;
 }
-.header{
-    /* margin: 2vh; */
-    padding-top: 2vh;
+header{
+   
+    padding: 3vh;
     display: flex;
     justify-content: left;
     height: 6vh;
     align-items: center;
 
 }
-.header img{
+header img{
     width: 10vw;
     height: auto;
 }
@@ -353,7 +353,7 @@ html, body {
     margin-bottom: 5px;
     border-radius: 5px;
 }
-.foot{
+footer{
     padding-left: 12vw;
     padding-right: 16vw; 
     padding-bottom: 5vh;
