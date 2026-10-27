@@ -181,6 +181,7 @@ header img{
     gap:20px;
     padding-right:20px;
     margin-right: 3vw;
+    flex-wrap: wrap;
 }
 .overlay{
     position: absolute;
@@ -428,4 +429,131 @@ footer{
     border: none;
     font-weight:700;
     font-size: 15px;
+}
+/* fix*/
+@media (max-width: 375px) {
+    .main1, .main2, .collection, .foot {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .inp {
+        width: 100%;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .he {
+        width: 35%;
+        min-width: 0;
+        margin: 5px;
+    }
+
+    .but {
+        margin: 0;
+    }
+
+    .buto {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .type {
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .ty {
+        margin: 3px;
+        padding: 5px;
+    }
+
+    .ty img {
+        width: 25px;
+        height: 25px;
+        margin: 3px;
+    }
+
+    .scroll-wrapper {
+        width: 100%;
+    }
+
+    .cardd {
+        min-width: 170px;
+        width: 170px;
+        height: 220px;
+    }
+
+    .off {
+        width: 100%;
+        padding: 0;
+        height: 120px;
+    }
+
+    .Res h1 {
+        font-size: 22px;
+    }
+
+    .sortby {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    .sortby h2 {
+        font-size: 16px;
+    }
+
+    .sortbtn {
+        margin: 0;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .res-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .foot1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imgf {
+        position: static;
+        margin: 0;
+    }
+
+    .flogo {
+        width: 120px;
+        height: auto;
+    }
+
+    .foot2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 10px;
+    }
+
+    .linksf2 h2 {
+        font-size: 13px;
+    }
+
+    .linksf2 h3 {
+        font-size: 12px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
